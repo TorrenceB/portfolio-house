@@ -1,4 +1,4 @@
-<template>
+`<template>
   <v-app>
     <!--App Bar -->
     <v-app-bar flat dense>
