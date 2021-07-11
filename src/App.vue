@@ -1,6 +1,11 @@
 <template>
   <v-app>
-    <v-main> </v-main>
+    <!--App Bar -->
+    <v-main>
+    <!--Bio Component -->
+    <!--Portfolio Component -->
+    <!--Contact Component --> 
+     </v-main>
   </v-app>
 </template>
 
