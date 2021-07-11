@@ -1,9 +1,9 @@
 <template>
-  <div><h1>Single Project View</h1></div>
+  <div><h1>Intro Section</h1></div>
 </template>
 
 <script>
 export default {
-  name: "Project",
+  name: "Intro",
 };
 </script>
