@@ -1,13 +1,16 @@
 <template>
   <v-footer>
-    <v-row class="text-center">
+    <v-row class="pa-4">
       <v-col>
-        <h1>{{ "Contact".toUpperCase() }}</h1>
+        <h1 class="text-center mb-4">{{ "Contact".toUpperCase() }}</h1>
         <v-row>
           <v-col>
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+            <v-avatar size="56" color="primary" class="white--text"
+              >TB</v-avatar
+            >
+            <h3>{{ "Torrence Brown".toUpperCase() }}</h3>
+            <h4>{{ "Frontend Engineer".toUpperCase() }}</h4>
+            <h4>{{ "torrenceb90@gmail.com".toUpperCase() }}</h4>
           </v-col>
           <v-col>
             <v-row>

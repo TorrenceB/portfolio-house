@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <h1>{{ "Portfolio".toUpperCase() }}</h1>
+    <h1 class="text-left">{{ "Portfolio".toUpperCase() }}</h1>
     <!--Project Component -->
-    <v-row>
+    <v-row class="pt-4 pb-6">
       <v-col v-for="project in projects" :key="project.id" cols="6">
         <Project :title="project.title" :text="project.text" />
       </v-col>

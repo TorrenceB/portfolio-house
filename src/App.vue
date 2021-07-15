@@ -11,11 +11,8 @@
     <v-row class="text-center">
       <v-col>
         <v-main>
-          <!--Bio Component -->
           <Intro />
-          <!--Portfolio Component -->
           <Portfolio />
-          <!--Contact Component -->
           <Contact />
         </v-main>
       </v-col>
