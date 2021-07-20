@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-6 mb-6 text-left">
+  <v-row class="ma-6 text-left">
     <v-col>
       <h1>{{ "Front-End Developer Based in Albuquerque, New Mexico".toUpperCase() }}</h1>
       <p>

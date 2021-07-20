@@ -39,3 +39,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+* {
+  font-family: "EB Garamond", serif;
+}
+</style>
