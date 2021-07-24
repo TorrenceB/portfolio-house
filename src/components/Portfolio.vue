@@ -2,9 +2,14 @@
   <v-container>
     <h1 class="text-left ml-6">{{ "Portfolio".toUpperCase() }}</h1>
     <v-row class="ma-6">
-      <v-col v-for="project in projects" :key="project.id" cols="6">
+      <v-carousel>
+        <v-carousel-item v-for="project in projects" :key="project.id">
+          <Project :title="project.title" :text="project.text" />
+        </v-carousel-item>
+      </v-carousel>
+      <!-- <v-col v-for="project in projects" :key="project.id" cols="6">
         <Project :title="project.title" :text="project.text" />
-      </v-col>
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
