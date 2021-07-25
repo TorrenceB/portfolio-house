@@ -1,12 +1,15 @@
 <template>
-  <v-hover value="true">
-    <v-card
-      ><v-row class="px-5"
-        ><v-card-title>{{ title }}</v-card-title
-        ><v-spacer></v-spacer><v-icon>mdi-dialpad</v-icon></v-row
-      ><v-card-text>{{ text }}</v-card-text></v-card
-    >
-  </v-hover>
+  <v-sheet height="100%">
+    <v-row class="px-5 fill-height" align="center" justify="center">
+      <v-col cols="6">
+        <v-row justify="space-between" class="pb-6">
+          <h2>{{ title }}</h2>
+          <v-icon>mdi-dialpad</v-icon>
+        </v-row>
+        <p class="text-left">{{ text }}</p>
+      </v-col>
+    </v-row>
+  </v-sheet>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <v-row class="ma-6 pl-6 text-left">
+  <v-row class="ma-6 text-left">
     <v-col cols="6">
       <h1>
         {{

@@ -1,15 +1,12 @@
 <template>
-  <v-container>
-    <h1 class="text-left ml-6">{{ "Portfolio".toUpperCase() }}</h1>
-    <v-row class="ma-6">
-      <v-carousel>
+  <v-container class="ml-6">
+    <h1 class="text-left">{{ "Portfolio".toUpperCase() }}</h1>
+    <v-row >
+      <v-carousel hide-delimiters>
         <v-carousel-item v-for="project in projects" :key="project.id">
           <Project :title="project.title" :text="project.text" />
         </v-carousel-item>
       </v-carousel>
-      <!-- <v-col v-for="project in projects" :key="project.id" cols="6">
-        <Project :title="project.title" :text="project.text" />
-      </v-col> -->
     </v-row>
   </v-container>
 </template>
