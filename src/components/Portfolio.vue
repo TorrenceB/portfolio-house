@@ -25,26 +25,24 @@ export default {
       {
         id: Math.floor(Math.random() * 1000),
         title: "Hotel Operations Management System",
-        text:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "The first piece of a proprietary Hotel Operations Management System for an Upwork client, this project was accomplished alongside two developer friends in the scope of 30 days. Acting as the primary liaison between the client and our agency, a healthy rapport was established between myself and the client. This resulted in a polished and functional product which solved the client’s problem of needing a way to assign tickets to hotel staff. This application included ways to prioritize duties to specific staff members, to categorize and filter tickets depending on what Hotel department (e.g Housekeeping, Front Desk, etc.) and assign each ticket to a location of the hotel which service was required. In addition, this application gave the client the ability to dynamically add staff members and hotel rooms via an administrative view. All data entered, deleted and updated by client was persisted through a Firebase backend.\
+        Stack: Vue.js, Vue Router, Vuex, Vuetify, Firebase.",
       },
       {
         id: Math.floor(Math.random() * 1000),
         title: "Netflix Clone",
-        text:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "This application was built to demonstrate my abilities as a Frontend developer to design to code. There are many repeating elements on the Netflix landing view therefore I saw this as a great opportunity to incorporate a Frontend framework and to learn the useful features of a component based structure. The main techniques and paradigms implemented in this project are the use of React Hooks for state management, CSS Flexbox and the consumption of the The Movie Database Api via the Axios library.\
+        Stack: React.js, Firebase",
       },
       {
         id: Math.floor(Math.random() * 1000),
         title: "MyVoice Landing Page",
-        text:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       },
       {
         id: Math.floor(Math.random() * 1000),
         title: "Swandoola Practitioner Application",
-        text:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       },
     ],
   }),
