@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="d-flex" style="min-height: 75vh">
     <v-row class="pa-4 my-16 text-left">
       <v-col cols="6">
         <h1>
