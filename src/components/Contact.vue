@@ -6,12 +6,11 @@
         <v-row>
           <v-col class="d-flex flex-column align-center">
             <v-row>
-              <v-col class="d-flex flex-column justify-center mr-n8">
+              <!--<v-col class="d-flex flex-column justify-center "> </v-col> -->
+              <v-col>
                 <v-avatar size="60" color="primary" class="white--text"
                   >TB</v-avatar
                 >
-              </v-col>
-              <v-col>
                 <h3 class="py-2">{{ "Torrence Brown".toUpperCase() }}</h3>
                 <h4 class="pb-2">{{ "Frontend Engineer".toUpperCase() }}</h4>
                 <h4 class="pb-2">
@@ -20,14 +19,13 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col class="d-flex flex-column">
-            <v-row>
-              <v-col>Github</v-col>
-              <v-col>Linkedin</v-col>
-            </v-row>
-            <v-row>
-              <v-col>Twitter</v-col>
-              <v-col>Medium</v-col>
+          <v-col class="d-flex flex-column align-center">
+            <v-row
+              v-for="icon in icons"
+              :key="icon.id"
+              class="d-flex flex-wrap"
+            >
+              <v-img :src="icon.iconUrl" width="150" height="35" contain class="mb-4"></v-img>
             </v-row>
           </v-col>
         </v-row>
@@ -39,5 +37,21 @@
 <script>
 export default {
   name: "Contact",
+  data: () => ({
+    icons: [
+      {
+        iconUrl: require("../assets/GitHub_Logo.png"),
+      },
+      {
+        iconUrl: require("../assets/LI-Logo.png"),
+      },
+      {
+        iconUrl: require("../assets/2021 Twitter logo - blue.png"),
+      },
+      {
+        iconUrl: require("../assets/Medium-Logo-White-RGB@4x.png"),
+      },
+    ],
+  }),
 };
 </script>
