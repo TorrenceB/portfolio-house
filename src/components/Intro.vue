@@ -7,7 +7,23 @@
         </h1>
         <p>
           A developer from Montana, rooted in his ways of wanting to acheive
-          great things along other like-minded and driven individuals.
+          great things alongside other like-minded individuals.
+          Torrence has over two years of professional experience in developing
+          Single Page Applications, conceptualizing and designing interfaces for
+          Mobile Content Management Systems and writing HTML, CSS and JavaScript
+          code to provide utility and outstanding interactions for users.
+        </p>
+        <p>
+          A humble approach and strong attention to detail with every project he
+          engages with, living by the philosophy that everything begins with
+          thoughful conversation to gather as much information as possible about
+          the problem at hand.
+        </p>
+        <p>
+          In addition to FrontEnd Development, he's also pursuing a discipline
+          in Copywriting, as many of his interests are driven by countless hours
+          spent with pen and paper, all in the name of striving to become better
+          at his craft and help make the world a better place.
         </p>
       </v-col>
     </v-row>
