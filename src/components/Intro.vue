@@ -7,11 +7,11 @@
         </h1>
         <p>
           A developer from Montana, rooted in his ways of wanting to acheive
-          great things alongside other like-minded individuals.
-          Torrence has over two years of professional experience in developing
-          Single Page Applications, conceptualizing and designing interfaces for
-          Mobile Content Management Systems and writing HTML, CSS and JavaScript
-          code to provide utility and outstanding interactions for users.
+          great things alongside other like-minded individuals. Torrence has
+          over two years of professional experience in developing Single Page
+          Applications, conceptualizing and designing interfaces for Mobile
+          Content Management Systems and writing HTML, CSS and JavaScript code
+          to provide utility and outstanding interactions for users.
         </p>
         <p>
           A humble approach and strong attention to detail with every project he
@@ -25,6 +25,11 @@
           spent with pen and paper, all in the name of striving to become better
           at his craft and help make the world a better place.
         </p>
+      </v-col>
+      <v-col>
+        <h2>{{ "Frontend Developer".toUpperCase() }}</h2>
+        <h2>{{ "Designer".toUpperCase() }}</h2>
+        <h2>{{ "Digital Soldier of Fortune".toUpperCase() }}</h2>
       </v-col>
     </v-row>
   </v-container>
