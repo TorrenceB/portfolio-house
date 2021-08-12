@@ -30,6 +30,13 @@
         <h2>{{ "Frontend Developer".toUpperCase() }}</h2>
         <h2>{{ "Designer".toUpperCase() }}</h2>
         <h2>{{ "Digital Soldier of Fortune".toUpperCase() }}</h2>
+        <v-avatar size="400"
+          ><v-img
+            height="100%"
+            width="100%"
+            src="../assets/torrenceb_icon.png"
+          ></v-img
+        ></v-avatar>
       </v-col>
     </v-row>
   </v-container>
