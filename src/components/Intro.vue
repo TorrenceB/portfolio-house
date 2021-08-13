@@ -5,6 +5,7 @@
         <h1>
           {{ "Torrence ".toUpperCase() }}
         </h1>
+        <p>Conversationalist by default, Web Designer by trade and Something by association.</p>
         <p>
           A developer from Montana, rooted in his ways of wanting to acheive
           great things alongside other like-minded individuals. Torrence has

@@ -1,12 +1,20 @@
 `<template>
-  <v-app>
-    <!--App Bar -->
+  <v-app app>
+    <v-navigation-drawer>
+      <v-list>
+          <v-list-item>
+            <v-list-item-action>
+              <v-icon></v-icon>
+            </v-list-item-action>
+          </v-list-item>
+         </v-list>
+    </v-navigation-drawer>
     <v-app-bar flat dense>
-      <v-app-bar-title>Torrence Brown</v-app-bar-title>
-      <v-spacer></v-spacer>
+      <!-- <v-app-bar-title>Torrence Brown</v-app-bar-title> -->
+      <!-- <v-spacer></v-spacer>
       <v-btn depressed>Bio</v-btn>
       <v-btn depressed>Portfolio</v-btn>
-      <v-btn depressed>Contact</v-btn>
+      <v-btn depressed>Contact</v-btn> -->
     </v-app-bar>
     <v-row class="text-center">
       <v-col>
