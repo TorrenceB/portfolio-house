@@ -20,7 +20,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar flat dense>
-      <v-app-bar-nav-icon @click.stop="toggleMenu"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="toggleMenu"
+        ><v-icon>mdi-hamburger</v-icon></v-app-bar-nav-icon
+      >
       <v-app-bar-title>Torrence Brown</v-app-bar-title>
       <!-- <v-spacer></v-spacer>
       <v-btn depressed>Bio</v-btn>

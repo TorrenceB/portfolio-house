@@ -6,7 +6,6 @@
         <v-row>
           <v-col class="d-flex flex-column align-center">
             <v-row>
-              <!--<v-col class="d-flex flex-column justify-center "> </v-col> -->
               <v-col>
                 <v-avatar size="60" color="primary" class="white--text"
                   >TB</v-avatar
