@@ -23,9 +23,16 @@
             <v-row
               v-for="icon in icons"
               :key="icon.id"
-              class="d-flex flex-wrap"
+              width="100%"
+              class="d-flex flex-wrap icon-container"
             >
-              <v-img :src="icon.iconUrl" width="150" height="35" contain class="mb-4"></v-img>
+              <v-img
+                :src="icon.iconUrl"
+                width="150"
+                height="35"
+                contain
+                class="mb-4"
+              ></v-img>
             </v-row>
           </v-col>
         </v-row>
@@ -40,16 +47,16 @@ export default {
   data: () => ({
     icons: [
       {
-        iconUrl: require("../assets/GitHub_Logo.png"),
-      },
-      {
-        iconUrl: require("../assets/LI-Logo.png"),
-      },
-      {
         iconUrl: require("../assets/2021 Twitter logo - blue.png"),
       },
       {
+        iconUrl: require("../assets/GitHub_Logo.png"),
+      },
+      {
         iconUrl: require("../assets/Medium-Logo-White-RGB@4x.png"),
+      },
+      {
+        iconUrl: require("../assets/LI-Logo.png"),
       },
     ],
   }),

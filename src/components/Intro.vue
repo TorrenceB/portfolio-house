@@ -31,14 +31,24 @@
         </p>
       </v-col>
       <v-col class="py-2">
-        <h2 class="pb-4">{{ "Frontend Developer".toUpperCase() }}</h2>
-        <h2 class="pb-4">{{ "Designer".toUpperCase() }}</h2>
-        <h2 class="pb-4">{{ "Digital Soldier of Fortune".toUpperCase() }}</h2>
-        <v-avatar size="400"
+        <h2 class="pb-4">
+          <v-icon>mdi-arrow-top-right-thick</v-icon
+          >{{ "Frontend Developer".toUpperCase() }}
+        </h2>
+        <h2 class="pb-4">
+          <v-icon>mdi-arrow-top-right-thick</v-icon
+          >{{ "Designer".toUpperCase() }}
+        </h2>
+        <h2 class="pb-4">
+          <v-icon>mdi-arrow-top-right-thick</v-icon
+          >{{ "Digital Soldier of Fortune".toUpperCase() }}
+        </h2>
+        <v-avatar :size="setLogoSize" class="text-center"
           ><v-img
             height="100%"
             width="100%"
             src="../assets/torrenceb_icon.png"
+            alt="Torrence Brown"
           ></v-img
         ></v-avatar>
       </v-col>
@@ -49,5 +59,17 @@
 <script>
 export default {
   name: "Intro",
+  computed: {
+    setLogoSize() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return "80%";
+        case "sm":
+          return "60%";
+        default:
+          return "35%";
+      }
+    },
+  },
 };
 </script>
