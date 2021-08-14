@@ -1,16 +1,27 @@
 `<template>
   <v-app app>
-    <v-navigation-drawer app>
+    <v-navigation-drawer app fixed v-model="menuIsOpen">
       <v-list>
-          <v-list-item>
-            <v-list-item-action>
-              <v-icon>settings</v-icon>
-            </v-list-item-action>
-          </v-list-item>
-         </v-list>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Bio</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Portfolio</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
     <v-app-bar flat dense>
-      <!-- <v-app-bar-title>Torrence Brown</v-app-bar-title> -->
+      <v-app-bar-nav-icon @click="toggleMenu"></v-app-bar-nav-icon>
+      <v-app-bar-title>Torrence Brown</v-app-bar-title>
       <!-- <v-spacer></v-spacer>
       <v-btn depressed>Bio</v-btn>
       <v-btn depressed>Portfolio</v-btn>
@@ -43,8 +54,14 @@ export default {
   },
 
   data: () => ({
-    //
+    menuIsOpen: false,
   }),
+
+  methods: {
+    toggleMenu() {
+      this.menuIsOpen = !this.menuIsOpen;
+    },
+  },
 };
 </script>
 

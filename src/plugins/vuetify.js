@@ -7,4 +7,10 @@ export default new Vuetify({
   theme: {
     dark: true,
   },
+  icons: {
+    iconFont: "fa",
+  },
+  values: {
+    hamburger: "fas fa-hamburger",
+  },
 });

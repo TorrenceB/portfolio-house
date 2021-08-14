@@ -1,11 +1,14 @@
 <template>
-  <v-container fluid class="d-flex" style="min-height: 75vh">
-    <v-row class="pa-4 my-16 text-left">
-      <v-col cols="6">
-        <h1>
+  <v-container fluid class="pa-4 my-8" style="min-height: 75vh">
+    <v-row class="text-left d-flex flex-column">
+      <v-col cols="6" class="d-flex flex-column">
+        <h1 class="pb-2">
           {{ "Torrence ".toUpperCase() }}
         </h1>
-        <p>Conversationalist by default, Web Designer by trade and Something by association.</p>
+        <p>
+          Conversationalist by default, Web Designer by trade and Something by
+          association.
+        </p>
         <p>
           A developer from Montana, rooted in his ways of wanting to acheive
           great things alongside other like-minded individuals. Torrence has
@@ -27,10 +30,10 @@
           at his craft and help make the world a better place.
         </p>
       </v-col>
-      <v-col>
-        <h2>{{ "Frontend Developer".toUpperCase() }}</h2>
-        <h2>{{ "Designer".toUpperCase() }}</h2>
-        <h2>{{ "Digital Soldier of Fortune".toUpperCase() }}</h2>
+      <v-col class="py-2">
+        <h2 class="pb-4">{{ "Frontend Developer".toUpperCase() }}</h2>
+        <h2 class="pb-4">{{ "Designer".toUpperCase() }}</h2>
+        <h2 class="pb-4">{{ "Digital Soldier of Fortune".toUpperCase() }}</h2>
         <v-avatar size="400"
           ><v-img
             height="100%"

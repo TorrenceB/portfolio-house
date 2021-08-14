@@ -1,5 +1,5 @@
 <template>
-  <v-container class="px-6 my-16" style="min-height: 75vh" fluid>
+  <v-container class="px-6" style="min-height: 75vh" fluid>
     <h1 class="text-left">{{ "The Works".toUpperCase() }}</h1>
     <v-row>
       <v-carousel hide-delimiters>
