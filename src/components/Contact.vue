@@ -25,13 +25,15 @@
               width="100%"
               class="d-flex flex-wrap icon-container"
             >
-              <v-img
-                :src="icon.iconUrl"
-                width="150"
-                height="35"
-                contain
-                class="mb-4"
-              ></v-img>
+              <v-btn :href="icon.route">
+                <v-img
+                  :src="icon.iconUrl"
+                  width="150"
+                  height="35"
+                  contain
+                  class="mb-4"
+                ></v-img>
+              </v-btn>
             </v-row>
           </v-col>
         </v-row>
@@ -47,15 +49,19 @@ export default {
     icons: [
       {
         iconUrl: require("../assets/2021 Twitter logo - blue.png"),
+        route: "https://twitter.com/TorrenceBrown4",
       },
       {
         iconUrl: require("../assets/GitHub_Logo.png"),
+        route: "https://github.com/TorrenceB",
       },
       {
         iconUrl: require("../assets/Medium-Logo-White-RGB@4x.png"),
+        route: "https://medium.com/@torrenceb90",
       },
       {
         iconUrl: require("../assets/LI-Logo.png"),
+        route: "https://www.linkedin.com/in/torrencebrown/",
       },
     ],
   }),

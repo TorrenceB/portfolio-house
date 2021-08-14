@@ -66,8 +66,10 @@ export default {
           return "80%";
         case "sm":
           return "60%";
-        default:
+        case "md":
           return "35%";
+        default:
+          return "25%";
       }
     },
   },
