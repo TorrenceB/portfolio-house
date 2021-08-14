@@ -1,10 +1,10 @@
 `<template>
   <v-app app>
-    <v-navigation-drawer>
+    <v-navigation-drawer app>
       <v-list>
           <v-list-item>
             <v-list-item-action>
-              <v-icon></v-icon>
+              <v-icon>settings</v-icon>
             </v-list-item-action>
           </v-list-item>
          </v-list>
