@@ -30,7 +30,7 @@
           at his craft and help make the world a better place.
         </p>
       </v-col>
-      <v-col class="py-2">
+      <v-col class="py-2" md="10" sm="8">
         <h2 class="pb-4">
           <v-icon>mdi-arrow-top-right-thick</v-icon
           >{{ "Frontend Developer".toUpperCase() }}

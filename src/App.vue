@@ -23,6 +23,7 @@
       <v-app-bar-nav-icon @click.stop="toggleMenu"
         ><v-icon size="40">mdi-hamburger</v-icon></v-app-bar-nav-icon
       >
+      <v-spacer></v-spacer>
       <v-app-bar-title>Torrence Brown</v-app-bar-title>
       <!-- <v-spacer></v-spacer>
       <v-btn depressed>Bio</v-btn>

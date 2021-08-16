@@ -25,9 +25,11 @@
               width="100%"
               class="d-flex flex-wrap "
             >
-              <v-btn :href="icon.route">
+              <v-btn :href="icon.route" icon plain>
                 <v-img
                   :src="icon.iconUrl"
+                  :alt="icon.imageAlt"
+                  lazy-src="Something goes here"
                   width="150"
                   height="35"
                   contain
@@ -50,18 +52,22 @@ export default {
       {
         iconUrl: require("../assets/2021 Twitter logo - blue.png"),
         route: "https://twitter.com/TorrenceBrown4",
+        imageAlt: "Twitter",
       },
       {
         iconUrl: require("../assets/GitHub_Logo.png"),
         route: "https://github.com/TorrenceB",
+        imageAlt: "Github",
       },
       {
-        iconUrl: require("../assets/Medium-Logo-White-RGB@4x.png"),
+        iconUrl: require("../assets/Medium-Logo-White-RGB@1x.png"),
         route: "https://medium.com/@torrenceb90",
+        imageAlt: "Medium",
       },
       {
         iconUrl: require("../assets/LI-Logo.png"),
         route: "https://www.linkedin.com/in/torrencebrown/",
+        imageAlt: "Linkedin",
       },
     ],
   }),
