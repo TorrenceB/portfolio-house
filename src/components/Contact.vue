@@ -23,7 +23,7 @@
               v-for="icon in icons"
               :key="icon.id"
               width="100%"
-              class="d-flex flex-wrap icon-container"
+              class="d-flex flex-wrap "
             >
               <v-btn :href="icon.route">
                 <v-img
