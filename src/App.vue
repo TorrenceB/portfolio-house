@@ -2,24 +2,24 @@
   <v-app app>
     <v-navigation-drawer app fixed v-model="menuIsOpen">
       <v-list>
-        <v-list-item>
+        <v-list-item @click="goToSelectedSection('bio')">
           <v-list-item-content>
             <v-list-item-title>Bio</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item @click="goToSelectedSection('#portfolio')">
           <v-list-item-content>
             <v-list-item-title>Portfolio</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item @click="goToSelectedSection('#contact')">
           <v-list-item-content>
             <v-list-item-title>Contact</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar flat dense>
+    <v-app-bar flat dense fixed>
       <v-app-bar-nav-icon @click.stop="toggleMenu"
         ><v-icon size="40">mdi-hamburger</v-icon></v-app-bar-nav-icon
       >
@@ -30,31 +30,15 @@
       <v-btn depressed>Portfolio</v-btn>
       <v-btn depressed>Contact</v-btn> -->
     </v-app-bar>
-    <v-row class="text-center">
-      <v-col>
-        <v-main>
-          <Intro />
-          <Portfolio />
-          <Contact />
-        </v-main>
-      </v-col>
-    </v-row>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import Intro from "@/components/Intro";
-import Portfolio from "@/components/Portfolio";
-import Contact from "@/components/Contact";
-
 export default {
   name: "App",
-
-  components: {
-    Intro,
-    Portfolio,
-    Contact,
-  },
 
   data: () => ({
     menuIsOpen: false,
@@ -62,6 +46,11 @@ export default {
 
   methods: {
     toggleMenu() {
+      this.menuIsOpen = !this.menuIsOpen;
+    },
+    goToSelectedSection(selector) {
+      this.$vuetify.goTo(selector);
+
       this.menuIsOpen = !this.menuIsOpen;
     },
   },

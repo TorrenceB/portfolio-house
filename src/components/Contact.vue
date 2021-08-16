@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="py-8">
+  <v-footer id="contact" class="py-8">
     <v-row>
       <v-col>
         <h1 class="text-center mb-4">{{ "Contact".toUpperCase() }}</h1>
