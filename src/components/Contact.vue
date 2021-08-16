@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <h1 class="text-center mb-4">{{ "Contact".toUpperCase() }}</h1>
-        <v-row>
+        <v-row class="d-flex flex-column flex-sm-row mt-sm-6">
           <v-col class="d-flex flex-column align-center">
             <v-row>
               <v-col>
@@ -18,12 +18,12 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col class="d-flex flex-column align-center">
+          <v-col class="d-flex flex-column align-center pt-8">
             <v-row
               v-for="icon in icons"
               :key="icon.id"
               width="100%"
-              class="d-flex flex-wrap "
+              class="d-flex flex-wrap"
             >
               <v-btn :href="icon.route" icon plain>
                 <v-img
