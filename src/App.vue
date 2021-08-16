@@ -2,7 +2,7 @@
   <v-app app>
     <v-navigation-drawer app fixed v-model="menuIsOpen">
       <v-list>
-        <v-list-item @click="goToSelectedSection('bio')">
+        <v-list-item @click="goToSelectedSection('#bio')">
           <v-list-item-content>
             <v-list-item-title>Bio</v-list-item-title>
           </v-list-item-content>
@@ -51,7 +51,7 @@ export default {
     goToSelectedSection(selector) {
       this.$vuetify.goTo(selector);
 
-      this.menuIsOpen = !this.menuIsOpen;
+      this.toggleMenu();
     },
   },
 };
