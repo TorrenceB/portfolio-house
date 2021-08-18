@@ -4,7 +4,11 @@
     <v-row>
       <v-carousel hide-delimiters>
         <v-carousel-item v-for="project in projects" :key="project.id">
-          <Project :title="project.title" :text="project.text" />
+          <Project
+            :title="project.title"
+            :text="project.text"
+            :link="project.link"
+          />
         </v-carousel-item>
       </v-carousel>
     </v-row>
@@ -26,7 +30,7 @@ export default {
         id: Math.floor(Math.random() * 1000),
         title: "Portfolio Page",
         text:
-          "This portfolio page was carefully crafted and designed with minimalism and functionality in mind. Although simple, I chose to use Vue.js as a Frontend library to build this page because I choose Vue as my Frontend tool of choice and because of the integrations that are available to make make routing and styling my page easier.",
+          "This portfolio page was carefully crafted and designed with minimalism and functionality in mind. Although simple, I chose to use Vue.js as a Frontend library to build this page because I choose Vue as my Frontend tool of choice and because of the integrations that are available to make routing and styling my page easier.",
       },
       {
         id: Math.floor(Math.random() * 1000),
@@ -48,12 +52,14 @@ export default {
         text:
           "This application was built to demonstrate my abilities as a Frontend developer to design to code. There are many repeating elements on the Netflix landing view therefore I saw this as a great opportunity to incorporate a Frontend framework and to learn the useful features of a component based structure. The main techniques and paradigms implemented in this project are the use of React Hooks for state management, CSS Flexbox and the consumption of the The Movie Database Api via the Axios library.\
         Stack: React.js, Firebase",
+        link: "https://netflix-clone-ceb9d.web.app/",
       },
       {
         id: Math.floor(Math.random() * 1000),
         title: "MyVoice Landing Page",
         text:
           "In addition to creating a mobile prototype for a Civil Engagement Start Up, I was tasked with developing a landing page to demonstrate our product. The main hurdles that I was able to overcome included form validation on the Front End, setting up user authentication with Firebase and handling user objects to send customized emails. Stack: React.js, Firebase",
+        link: "https://itsmyvoice.org/",
       },
       {
         id: Math.floor(Math.random() * 1000),

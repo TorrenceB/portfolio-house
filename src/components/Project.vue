@@ -7,6 +7,10 @@
           <v-icon>mdi-dialpad</v-icon>
         </v-row>
         <p class="text-left">{{ text }}</p>
+        <p v-if="link" class="text-left">
+          Check it out:
+          <a :href="link">{{ title }}</a>
+        </p>
       </v-col>
     </v-row>
   </v-sheet>
@@ -21,6 +25,9 @@ export default {
       type: String,
     },
     text: {
+      type: String,
+    },
+    link: {
       type: String,
     },
   },

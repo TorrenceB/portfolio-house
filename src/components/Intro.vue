@@ -6,7 +6,7 @@
           {{ "Torrence ".toUpperCase() }}
         </h1>
         <p>
-          Conversationalist by default, Web Designer by trade and Something by
+          Conversationalist by default, Web Designer by trade and Ambitionist by
           association.
         </p>
         <p>
