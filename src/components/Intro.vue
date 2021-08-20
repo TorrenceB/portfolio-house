@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-4 my-8" style="min-height: 75vh" id="bio">
     <v-row class="text-left d-flex flex-column">
-      <v-col cols="6" class="d-flex flex-column">
+      <v-col md="8" class="d-flex flex-column">
         <h1 class="pb-2">
           {{ "Torrence ".toUpperCase() }}
         </h1>

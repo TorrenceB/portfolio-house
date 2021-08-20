@@ -1,6 +1,6 @@
 `<template>
   <v-app app>
-    <v-navigation-drawer app fixed v-model="menuIsOpen">
+    <v-navigation-drawer app v-model="menuIsOpen">
       <v-list>
         <v-list-item @click="goToSelectedSection('#bio')">
           <v-list-item-content>
@@ -20,15 +20,16 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar flat dense fixed>
-      <v-app-bar-nav-icon @click.stop="toggleMenu"
+      <v-app-bar-nav-icon @click.stop="toggleMenu" class="d-md-none"
         ><v-icon size="40">mdi-hamburger</v-icon></v-app-bar-nav-icon
       >
+      <v-app-bar-title class="d-none d-md-flex">Torrence Brown</v-app-bar-title>
       <v-spacer></v-spacer>
-      <v-app-bar-title>Torrence Brown</v-app-bar-title>
-      <!-- <v-spacer></v-spacer>
-      <v-btn depressed>Bio</v-btn>
-      <v-btn depressed>Portfolio</v-btn>
-      <v-btn depressed>Contact</v-btn> -->
+      <div class="d-none d-md-flex">
+        <v-btn depressed @click="$vuetify.goTo('#bio')">Bio</v-btn>
+        <v-btn depressed @click="$vuetify.goTo('#portfolio')">Portfolio</v-btn>
+        <v-btn depressed @click="$vuetify.goTo('#contact')">Contact</v-btn>
+      </div>
     </v-app-bar>
     <v-main>
       <router-view></router-view>

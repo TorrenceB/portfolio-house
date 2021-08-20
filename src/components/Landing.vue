@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="app-wrapper">
     <v-row class="text-center">
       <v-col>
         <Intro />
@@ -25,3 +25,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.app-wrapper {
+  max-width: 100%;
+}
+</style>
