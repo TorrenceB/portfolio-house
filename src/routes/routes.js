@@ -10,6 +10,11 @@ const router = new VueRouter({
       name: "landing",
       component: () => import("@/components/Landing"),
     },
+    {
+      path: "/screenshot",
+      name: "screenshot",
+      component: () => import("@/components/ScreenshotContainer"),
+    },
   ],
 });
 

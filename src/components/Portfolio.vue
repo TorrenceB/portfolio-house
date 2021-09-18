@@ -1,5 +1,5 @@
 <template>
-  <v-container id="portfolio" class="px-6" style="min-height: 75vh" fluid>
+  <v-container id="portfolio" class="mr-8" style="min-height: 75vh" fluid>
     <h1 class="text-left pb-6">{{ "The Works".toUpperCase() }}</h1>
     <v-row>
       <v-carousel hide-delimiters>
@@ -38,6 +38,8 @@ export default {
         text:
           "As the main focus for a summer internship, I was tasked with the responsibility of developing a mock up for what would eventually become the interface for an employee timekeeping feature of a company’s proprietary Content Management System. The mock ups were built exclusively with HTML, CSS and JavaScript and featured religious use of semantic HTML and CSS Flexbox. The stylesheet in particular was designed in a way that CSS classes were almost exclusively comprised of utility classes, rather than being content specific. This allowed for complete independence of the stylesheet, encouraging re-use and object composition. This feature went on to solve a long standing issue that the company had, effectively creating a single source of truth where contracted employees were able to enter hours worked by time period and these entries would allow for an administrator to review and approve hours accordingly.\
         Stack: HTML, CSS, JavaScript",
+        isLocalRoute: true,
+        link: "",
       },
       {
         id: Math.floor(Math.random() * 1000),
