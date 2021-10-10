@@ -1,32 +1,40 @@
 <template>
-  <v-container id="portfolio" class="mr-8" style="min-height: 75vh" fluid>
-    <h1 class="text-left pb-6">{{ "The Works".toUpperCase() }}</h1>
-    <v-row class="mb-6">
-      <v-hover v-slot="{ hover }">
-        <v-carousel hide-delimiters height="500">
-          <v-carousel-item v-for="project in projects" :key="project.id">
-            <v-img :src="project.image" contain min-height="500"></v-img>
-            <v-fade-transition>
-              <v-overlay
-                v-if="hover"
-                opacity="0.75"
-                class="px-14 text-left"
-                absolute
-              >
-                <h2>{{ project.title }}</h2>
-                <p>
-                  {{ project.text }}
-                </p>
-                <p v-if="project.link">
-                  Check it out:
-                  <a :href="project.link"> {{ project.title }}</a>
-                </p>
-              </v-overlay>
-            </v-fade-transition>
-          </v-carousel-item>
-        </v-carousel>
-      </v-hover>
+  <v-container id="portfolio" class="mr-8 mb-4" style="min-height: 40vh" fluid>
+    <h1 class="text-left mb-2">{{ "The Works".toUpperCase() }}</h1>
+    <v-row>
+      <v-col>
+        <v-hover v-slot="{ hover }">
+          <v-carousel hide-delimiters height="setCarouselHeight">
+            <v-carousel-item v-for="project in projects" :key="project.id">
+              <v-img
+                :src="project.image"
+                :min-height="setCarouselHeight"
+              ></v-img>
+              <v-fade-transition>
+                <v-overlay
+                  v-if="hover"
+                  opacity="0.75"
+                  class="px-14 text-left"
+                  absolute
+                >
+                  <h2>{{ project.title }}</h2>
+                  <p>
+                    {{ project.text }}
+                  </p>
+                  <p v-if="project.link">
+                    Check it out:
+                    <a :href="project.link"> {{ project.title }}</a>
+                  </p>
+                </v-overlay>
+              </v-fade-transition>
+            </v-carousel-item>
+          </v-carousel>
+        </v-hover>
+      </v-col>
     </v-row>
+    <h4 class="text-left mt-2 hidden-sm-and-up">
+      Tap to see description
+    </h4>
   </v-container>
 </template>
 
@@ -36,6 +44,7 @@ export default {
 
   components: {},
   data: () => ({
+    // TODO: Add alt properties to all objects
     projects: [
       {
         id: Math.floor(Math.random() * 1000),
@@ -79,5 +88,10 @@ export default {
       },
     ],
   }),
+  computed: {
+    setCarouselHeight() {
+      return this.$vuetify.breakpoint.xs ? "100vh" : "450";
+    },
+  },
 };
 </script>
